@@ -22,6 +22,8 @@
         </form>
         <br>
         <a href="index.php" class="boton">Volver al Inicio</a>
+        <br><br>
+        <a href="index.php?c=Minijuegos&m=listar" class="boton">Ir a Lista (Sin Login)</a>
 
         <!-- Debug SQL -->
         <?php if (isset($sql)) { ?>

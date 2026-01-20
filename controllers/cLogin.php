@@ -1,27 +1,27 @@
 <?php
-require_once 'models/mUsuario.php';
+    require_once 'models/mUsuario.php';
 
-class CLogin
-{
-    public $vista;
-    private $modelo;
-
-    public function __construct()
+    class CLogin
     {
-        $this->modelo = new Usuario();
-        $this->vista = 'login';
-    }
+        public $vista;
+        private $modelo;
 
-    public function login($datos)
-    {
-        $resultado = [];
-
-        if (isset($datos['usuario']) && isset($datos['password'])) {
-            $resultado = $this->modelo->login($datos['usuario'], $datos['password']);
+        public function __construct()
+        {
+            $this->modelo = new Usuario();
+            $this->vista = 'login';
         }
 
-        $this->vista = 'login';
-        return $resultado;
+        public function login($datos = [])
+        {
+            $resultado = [];
+
+            if (isset($datos['usuario']) && isset($datos['password'])) {
+                $resultado = $this->modelo->login($datos['usuario'], $datos['password']);
+            }
+
+            $this->vista = 'login';
+            return $resultado;
+        }
     }
-}
 ?>

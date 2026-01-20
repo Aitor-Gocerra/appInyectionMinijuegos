@@ -9,7 +9,10 @@ class Usuario extends Conexion
     {
         try {
             // VULNERABLE: Concatenación directa de strings sin sanitizar
-            $sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
+            $sql = "
+                SELECT * 
+                FROM usuarios 
+                WHERE usuario = '$usuario' AND password = '$password'";
             
             // Ejecutamos la query directamente
             $stmt = $this->conexion->query($sql);
