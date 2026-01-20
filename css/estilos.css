@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boton-jugar {
+    background-color: #27ae60;
+}
+
+.boton-volver {
+    background-color: #e74c3c;
+}
+
+.historial {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.historial-lista {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.historial-elemento {
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Estilos para Debug SQL y Login */
+.caja-depuracion-sql {
+    background: #ffdddd;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.bloque-codigo-sql {
+    display: block;
+    padding: 10px;
+    background: white;
+}
+
+.caja-exito-login {
+    background: #ddffdd;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mensaje-error-login {
+    color: red;
+    margin-top: 10px;
+}
+
+.acciones-superiores {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.caja-busqueda {
+    background: #eee;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.mensaje-depuracion-busqueda {
+    margin-top: 10px;
+    color: red;
+}
+
+.texto-centrado {
+    text-align: center;
+}
